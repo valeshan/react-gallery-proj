@@ -9,11 +9,20 @@ h2{
 }
 
 
-search-container{
-  margin: 500px;
+.search-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categoryComponent{
+  margin: 0.5em;
 }
 
 
 ul{
   list-style: none;
+}
+
+a{
+  text-decoration: none;
 }

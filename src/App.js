@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import {Grid} from 'react-bootstrap';
+
 import Search from './components/Search';
 import Navigation from './components/Navigation';
 import NotFound from './components/NotFound';
-import {BrowserRouter, Route} from 'react-router-dom';
+
 
 //LinkComponents
 import Cats from './components/LinkComponents/Cats';
@@ -23,9 +26,11 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
-          <Search />
+          <Grid>
+            <Search />
 
-          <Navigation />
+            <Navigation />
+          </Grid>
           <div  className="photo-container">
             <h2>Results</h2>
             <Route path = "/search/cats" render ={()=><Cats />} />
