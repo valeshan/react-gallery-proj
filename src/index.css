@@ -5,4 +5,14 @@ body {
 }
 
 h2{
+  color: black;
+}
+
+
+search-container{
+}
+
+
+ul{
+  list-style: none;
 }
