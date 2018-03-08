@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from './components/Search';
 import Navigation from './components/Navigation';
 import NotFound from './components/NotFound';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 //LinkComponents
 import Cats from './components/LinkComponents/Cats';
