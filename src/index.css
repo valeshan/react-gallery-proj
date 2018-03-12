@@ -37,7 +37,7 @@ h2{
 
 .categoryComponent{
   margin-top: 2.5em;
-  margin-right: 1em;
+  margin-right: 1.5em;
   width: 6em;
   text-decoration: none;
   height: 2em;
@@ -52,10 +52,31 @@ h2{
 
 .results-title{
   margin-top: 2em;
+  margin-bottom: 1.5em;
   margin-left: 9em;
   font-weight: bold;
 }
 
+.photo-container{
+  max-width: 220px;
+}
+.photo{
+  overflow: hidden;
+   line-height: 0;
+   margin-bottom: 1em;
+}
+
+img{
+ position: relative;
+ transition: transform 1.25s;
+ float: left;
+ min-width: 220px;
+ height: 170px;
+}
+
+.photo:hover img{
+  transform: scale(1.25);
+}
 
 button{
   background-color: #4d79ff;

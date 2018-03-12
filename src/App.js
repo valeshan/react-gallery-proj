@@ -31,13 +31,14 @@ class App extends Component {
 
             <Navigation />
           </Grid>
+          <h2 className= "results-title">Results</h2>
           <div  className="photo-container">
-            <h2 className= "results-title">Results</h2>
             <Route path = "/search/cats" render ={()=><Cats />} />
             <Route path = "/search/dogs" render ={()=><Dogs />} />
             <Route path = "/search/computers" render ={()=><Computers />} />
             <ul>
-
+              <Grid>
+              </Grid>
             </ul>
             <NotFound />
           </div>
