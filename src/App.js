@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Grid} from 'react-bootstrap';
 
 import Search from './components/Search';
+import SearchResults from './components/SearchResults';
 import Navigation from './components/Navigation';
 import NotFound from './components/NotFound';
-
 
 //LinkComponents
 import Cats from './components/LinkComponents/Cats';
@@ -14,34 +14,22 @@ import Computers from './components/LinkComponents/Computers';
 
 class App extends Component {
 
-  constructor(){
-    super();
-    this.state ={
-      images :[]
-    }
-  }
-
-
   render() {
     return (
       <BrowserRouter>
         <div className="container">
           <Grid>
-            <Search />
-
+            <Route path = "/search" render ={()=><Search />} />
             <Navigation />
           </Grid>
           <h2 className= "results-title">Results</h2>
-          <div  className="photo-container">
-            <Route path = "/search/cats" render ={()=><Cats />} />
-            <Route path = "/search/dogs" render ={()=><Dogs />} />
-            <Route path = "/search/computers" render ={()=><Computers />} />
-            <ul>
-              <Grid>
-              </Grid>
-            </ul>
-            <NotFound />
-          </div>
+            <Switch>
+              <Route path = "/search/:topic" render = {()=> <SearchResults />} />
+              <Route path = "/search/cats" render ={()=><Cats />} />
+              <Route path = "/search/dogs" render ={()=><Dogs />} />
+              <Route path = "/search/computers" render ={()=><Computers />} />
+              <Route component = {NotFound} />
+            </Switch>
         </div>
       </BrowserRouter>
     );
