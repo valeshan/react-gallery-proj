@@ -3,10 +3,11 @@ import PhotoContainer from '../PhotoContainer';
 
 
 
-const Cats = props =>{
-  return (
+const Cats = props => (
+
     <PhotoContainer topic = 'cats' />
-  )
-}
+
+)
+
 
 export default Cats;

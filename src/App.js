@@ -19,15 +19,17 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Grid>
-            <Route path = "/search" render ={()=><Search />} />
+            <Switch>
+              <Route exact path = "/search" render ={()=><Search />} />
+            </Switch>
             <Navigation />
           </Grid>
           <h2 className= "results-title">Results</h2>
             <Switch>
-              <Route path = "/search/:topic" render = {()=> <SearchResults />} />
-              <Route path = "/search/cats" render ={()=><Cats />} />
-              <Route path = "/search/dogs" render ={()=><Dogs />} />
-              <Route path = "/search/computers" render ={()=><Computers />} />
+              <Route path = "/cats" component = {Cats} />
+              <Route path = "/dogs" component = {Dogs} />
+              <Route path = "/computers" component = {Computers} />
+              <Route path = "/search/:topic" component = {SearchResults} />
               <Route component = {NotFound} />
             </Switch>
         </div>
