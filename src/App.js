@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Grid} from 'react-bootstrap';
 
-import Search from './components/Search';
+
 import SearchResults from './components/SearchResults';
 import Navigation from './components/Navigation';
 import NotFound from './components/NotFound';
@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import Cats from './components/LinkComponents/Cats';
 import Dogs from './components/LinkComponents/Dogs';
 import Computers from './components/LinkComponents/Computers';
+import Home from './components/LinkComponents/Home';
 
 class App extends Component {
 
@@ -19,13 +20,11 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Grid>
-            <Switch>
-              <Route exact path = "/search" render ={()=><Search />} />
-            </Switch>
             <Navigation />
           </Grid>
           <h2 className= "results-title">Results</h2>
             <Switch>
+              <Route exact path = "/" component = {Home}  />
               <Route path = "/cats" component = {Cats} />
               <Route path = "/dogs" component = {Dogs} />
               <Route path = "/computers" component = {Computers} />

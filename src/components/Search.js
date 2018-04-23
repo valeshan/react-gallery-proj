@@ -13,7 +13,7 @@ export default class Search extends Component {
   onSearchChange = e =>{
     this.setState({
       searchText: e.target.value
-    })
+    });
   }
 
   handleSubmit = e =>{
@@ -33,7 +33,7 @@ export default class Search extends Component {
                 type="search"
                 placeholder="Search"
                 onChange = {this.onSearchChange}
-                ref = {(input)=> this.query =input}
+                required
                 />
           </FormGroup>
           {' '}
