@@ -4,9 +4,10 @@ import PhotoContainer from '../PhotoContainer';
 
 
 const Cats = props => (
-
+  <div>
+    <h2 className= "results-title">Results</h2>
     <PhotoContainer topic = 'cats' />
-
+  </div>
 )
 
 

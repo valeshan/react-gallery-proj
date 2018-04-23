@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import Cats from './components/LinkComponents/Cats';
 import Dogs from './components/LinkComponents/Dogs';
 import Balloons from './components/LinkComponents/Balloons';
+import Searchbar from './components/LinkComponents/Searchbar';
 import Home from './components/LinkComponents/Home';
 
 class App extends Component {
@@ -22,12 +23,12 @@ class App extends Component {
           <Grid>
             <Navigation />
           </Grid>
-          <h2 className= "results-title">Results</h2>
             <Switch>
               <Route exact path = "/" component = {Home}  />
               <Route path = "/cats" component = {Cats} />
               <Route path = "/dogs" component = {Dogs} />
               <Route path = "/balloons" component = {Balloons} />
+              <Route exact path = "/search" component = {Searchbar} />
               <Route path = "/search/:topic" component = {SearchResults} />
               <Route component = {NotFound} />
             </Switch>

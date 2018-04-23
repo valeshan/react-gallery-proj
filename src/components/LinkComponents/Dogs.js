@@ -3,10 +3,11 @@ import PhotoContainer from '../PhotoContainer';
 
 
 
-const Dogs = props =>{
-  return (
-    <PhotoContainer topic='dogs' />
-  )
-}
+const Dogs = props =>(
+  <div>
+    <h2 className= "results-title">Results</h2>
+    <PhotoContainer topic = 'dogs' />
+  </div>
+)
 
 export default Dogs;
