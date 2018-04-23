@@ -8,6 +8,15 @@ h2{
   color: black;
 }
 
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
 /**Search Component **/
 
 .search-bar{
@@ -27,6 +36,18 @@ h2{
   margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
+}
+
+button{
+  background-color: #4d79ff;
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  text-decoration: none;
+  background-color: #7d79ff; /* Green */
+  color: white;
 }
 
 /**Link Component **/
@@ -81,25 +102,4 @@ h2{
 
 .photo-container ul li img:hover{
   transform: scale(1.25);
-}
-
-button{
-  background-color: #4d79ff;
-  text-decoration: none;
-  color: white;
-}
-
-button:hover {
-  text-decoration: none;
-  background-color: #7d79ff; /* Green */
-  color: white;
-}
-
-
-ul{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
 }
