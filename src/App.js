@@ -10,7 +10,7 @@ import NotFound from './components/NotFound';
 //LinkComponents
 import Cats from './components/LinkComponents/Cats';
 import Dogs from './components/LinkComponents/Dogs';
-import Computers from './components/LinkComponents/Computers';
+import Balloons from './components/LinkComponents/Balloons';
 import Home from './components/LinkComponents/Home';
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
               <Route exact path = "/" component = {Home}  />
               <Route path = "/cats" component = {Cats} />
               <Route path = "/dogs" component = {Dogs} />
-              <Route path = "/computers" component = {Computers} />
+              <Route path = "/balloons" component = {Balloons} />
               <Route path = "/search/:topic" component = {SearchResults} />
               <Route component = {NotFound} />
             </Switch>
