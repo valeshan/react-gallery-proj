@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import { Form, FormControl, FormGroup, Button} from 'react-bootstrap';
-import SearchResults from './SearchResults';
+import PhotoContainer from './PhotoContainer';
+import { withRouter } from 'react-router-dom';
 
-export default class Search extends Component {
+class Search extends Component {
   constructor(){
       super();
       this.state = {
@@ -48,3 +49,6 @@ export default class Search extends Component {
     )
   }
 }
+
+
+export default withRouter(Search);
