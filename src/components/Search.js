@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Form, FormControl, FormGroup, Button} from 'react-bootstrap';
-import PhotoContainer from './PhotoContainer';
 import { withRouter } from 'react-router-dom';
 
 class Search extends Component {
@@ -20,8 +19,9 @@ class Search extends Component {
   handleSubmit = e =>{
     e.preventDefault();
     e.currentTarget.reset();
-    let path = `search/${this.state.searchText}`;
+    let path =`search/${this.state.searchText}`;
     this.props.history.push(path);
+    console.log(this.props.history.location.pathname);
   }
 
   render() {

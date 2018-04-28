@@ -8,6 +8,11 @@ h2{
   color: black;
 }
 
+h3{
+  margin-top: 3em;
+  margin-left: 3em;
+}
+
 ul{
   list-style: none;
 }
@@ -57,7 +62,7 @@ button:hover {
 }
 
 .categoryComponent{
-  margin-top: 2.5em;
+  margin-top: 5em;
   margin-right: 1.5em;
   width: 6em;
   text-decoration: none;
@@ -81,7 +86,7 @@ button:hover {
 .photo-container ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -89,7 +94,7 @@ button:hover {
   width: 220px;
   height: 165px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 2.5em;
 }
 
 .photo-container ul li img{
