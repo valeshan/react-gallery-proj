@@ -27,7 +27,9 @@ class PhotoContainer extends Component {
         });
       })
       .catch(error => {
-        <h3>Error fetching and parsing data { error }</h3>
+        return (
+          <h3>Error fetching and parsing data { error }</h3>
+        );
       });
   }
 
