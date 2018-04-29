@@ -19,7 +19,7 @@ class Search extends Component {
   handleSubmit = e =>{
     e.preventDefault();
     e.currentTarget.reset();
-    let path =`search/${this.state.searchText}`;
+    let path =`/${this.state.searchText}`;
     this.props.history.push(path);
     console.log(this.props.history.location.pathname);
   }

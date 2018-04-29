@@ -29,7 +29,7 @@ class App extends Component {
               <Route path = "/dogs" component = {Dogs} />
               <Route path = "/balloons" component = {Balloons} />
               <Route exact path = "/search" component = {Searchbar} />
-              <Route path = "/search/:topic" component = {SearchResults} />
+              <Route path = "/:topic" component = {SearchResults} />
               <Route component = {NotFound} />
             </Switch>
         </div>
