@@ -2,6 +2,7 @@ import React from 'react';
 import PhotoContainer from '../PhotoContainer';
 
 
+
 const Balloons = props =>(
     <div>
       <h2 className= "results-title">Results</h2>

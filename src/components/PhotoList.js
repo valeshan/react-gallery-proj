@@ -4,7 +4,7 @@ import Photo from './Photo';
 const PhotoList = (props) =>{
     let images;
     const photos = props.data;
-    if (photos){
+    if (photos.length > 0){
       images = photos.map(image => <Photo url = {`http://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`} key={image.id} /> )
     } else{
       images = "Sorry, no matches for that particular search.";
